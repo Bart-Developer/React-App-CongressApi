@@ -1,10 +1,11 @@
 import React from 'react'
+import Home from '../src/views/Home.jsx'
 
 const App = () => {
     return (
-        <div>
-            <h1>Hola! soy un componente</h1>
-        </div>
+        <>
+            <Home />
+        </>
     )
 }
 
