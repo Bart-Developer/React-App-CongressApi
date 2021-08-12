@@ -1,4 +1,47 @@
 :root{
+  --mainColor: #21232a;
+  --mainLetterColor: rgb(255, 255, 255);
   --navColor: yellow;
   --backgroundMain: white;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;;
+}
+
+
+/* ------------HEADER----------- */
+
+header{
+  height: 10vh;
+  width: 100%;
+}
+
+.ContentHeader{
+  height: 100%;
+  width: 100%;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--mainLetterColor);
+}
+
+.ContentHeader h1{
+  color:var(--mainLetterColor);
+  letter-spacing: 5px;
+}
+
+#imgHeader{
+  background-image: url(../src/assets/Tía\ Alejandra.gif);
+  height: 9vh;
+  width: 6vw;
+  background-position: center;
+  background-size: cover;
+  border-radius: 60%;
+}
+
+/* ---------------------------- */
