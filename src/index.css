@@ -83,10 +83,12 @@ main{
   border-radius: 10px;
   border: 1px solid white;
   padding: 10px;
+ 
 }
 
 .div-content-info p{
-  color:rgb(255, 255, 255)
+  color:rgb(255, 255, 255);
+  text-align: left;
 }
 
 .btn-more-less{
