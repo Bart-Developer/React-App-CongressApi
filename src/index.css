@@ -12,12 +12,17 @@
   font-family: 'Work Sans', sans-serif;;
 }
 
+.wrapper{
+  width: 375px;
+  margin:0 auto;
+}
 
 /* 
 * ESTILOS NAVBAR */
 
 .navbar{
   background-color: var(--mainColor);
+  padding: 10px;
 }
 
 .accordion-button{
@@ -25,6 +30,17 @@
   color:white!important
 }
 
+.navBar-items{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-brand{
+  padding-bottom: 0px!important;
+}
   
 /*------------HEADER-----------*/
  
