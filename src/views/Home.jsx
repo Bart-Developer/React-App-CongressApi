@@ -8,6 +8,7 @@ const Home = () => {
     return (
  
         <>
+        
             <Header />
             <Navbar />
 
@@ -16,6 +17,7 @@ const Home = () => {
                     
                 </div>
             </main>
+          
         </>
     )
 }

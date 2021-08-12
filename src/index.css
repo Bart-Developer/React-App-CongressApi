@@ -20,6 +20,10 @@
   background-color: var(--mainColor);
 }
 
+.accordion-button{
+  background-color: var(--mainColor)!important;
+  color:white!important
+}
 
 
 /* ------------HEADER----------- */
@@ -66,5 +70,6 @@ main{
   background-color: var(--mainBackground);
   background-image: url(../src/assets/World\ Map.svg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
