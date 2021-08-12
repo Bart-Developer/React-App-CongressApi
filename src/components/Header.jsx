@@ -1,9 +1,8 @@
 import React from 'react'
-import { getSenators } from '../services/getSenators.jsx'
+
 
 export default function Header() {
     
-    getSenators();
     
     return (
         <>
