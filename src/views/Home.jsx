@@ -7,9 +7,10 @@ const Home = () => {
     return (
  
         <>
+        
             <Header />
             <Navbar />
-
+          
         </>
     )
 }

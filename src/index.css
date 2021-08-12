@@ -20,6 +20,10 @@
   background-color: var(--mainColor);
 }
 
+.accordion-button{
+  background-color: var(--mainColor)!important;
+  color:white!important
+}
 
 
 /* ------------HEADER----------- */
