@@ -14,7 +14,9 @@ const Home = () => {
 
             <main>
                 <div className="contentMain">
-                    
+                    <div className="div-content-info">
+
+                    </div>
                 </div>
             </main>
           

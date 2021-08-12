@@ -61,15 +61,29 @@ header{
 /* ------------MAIN---------------- */
 
 main{
-  min-height: 84vh;
+  min-height: 83vh;
 }
 
 .contentMain{
-  min-height: 84vh;
+  min-height: 83vh;
   width: 100%;
   background-color: var(--mainBackground);
   background-image: url(../src/assets/World\ Map.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.div-content-info{
+  height: 70vh;
+  width: 80%;
+  background-color: var(--mainColor);
+  opacity: .6;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+/* ---------------------------- */
