@@ -1,4 +1,6 @@
 :root{
+  --mainColor: #21232a;
+  --mainLetterColor: rgb(255, 255, 255);
   --navColor: yellow;
   --backgroundMain: white;
 }
