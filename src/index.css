@@ -13,6 +13,15 @@
 }
 
 
+/* 
+* ESTILOS NAVBAR */
+
+.navbar{
+  background-color: var(--mainColor);
+}
+
+
+
 /* ------------HEADER----------- */
 
 header{
