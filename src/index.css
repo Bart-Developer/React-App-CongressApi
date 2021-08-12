@@ -2,7 +2,7 @@
   --mainColor: #21232a;
   --mainLetterColor: rgb(255, 255, 255);
   --navColor: yellow;
-  --backgroundMain: white;
+  --mainBackground: #302F40;
 }
 
 *{
@@ -54,4 +54,17 @@ header{
   border-radius: 60%;
 }
 
-/* ---------------------------- */
+/* ------------MAIN---------------- */
+
+main{
+  min-height: 84vh;
+}
+
+.contentMain{
+  min-height: 84vh;
+  width: 100%;
+  background-color: var(--mainBackground);
+  background-image: url(../src/assets/World\ Map.svg);
+  background-position: center;
+  background-size: cover;
+}
