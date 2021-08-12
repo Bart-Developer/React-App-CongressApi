@@ -75,15 +75,28 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
-
 .div-content-info{
-  height: 70vh;
-  width: 80%;
+  min-height: 70vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--mainColor);
-  opacity: .6;
   border-radius: 10px;
   border: 1px solid white;
+  padding: 10px;
+}
+
+.div-content-info p{
+  color:white
+}
+
+.btn-more-less{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------------------------- */
