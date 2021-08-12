@@ -9,10 +9,7 @@ export const getSenators = async () => {
         }
     }
     const resp = await fetch(url, key)
-    const { results } = await resp.json();
-    const [ senators ] = results;
+    const { results:[senators] } = await resp.json();
     
-    console.log(senators);
-
         return senators;
 }
