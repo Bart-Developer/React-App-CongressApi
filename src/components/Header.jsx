@@ -7,6 +7,7 @@ export default function Header() {
                 <div className="ContentHeader">
                     <div id="imgHeader"></div>
                     <h1>Senators and Congressmen</h1>
+                    <h1>Senators and Congressmen</h1>
                 </div>
             </header>
         </>
