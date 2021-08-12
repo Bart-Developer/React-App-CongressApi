@@ -16,7 +16,7 @@ const Navbar = () => {
                         <div className="accordion mt-2" id="accordionExample">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingOne">
-                                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button className="accordion-button static" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Home
                                     </button>
                                 </h2>
@@ -28,11 +28,11 @@ const Navbar = () => {
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone1" aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>
@@ -44,11 +44,11 @@ const Navbar = () => {
                                     </button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone3" aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>
@@ -57,7 +57,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-
         </>
     )
 }
