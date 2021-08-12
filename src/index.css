@@ -32,7 +32,7 @@ header{
 
 .ContentHeader h1{
   color:var(--mainLetterColor);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 #imgHeader{
