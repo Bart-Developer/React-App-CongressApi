@@ -1,6 +1,5 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Navbar = () => {
 
     return (
@@ -8,12 +7,12 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-dark">
                 <div className="container-fluid">
-                    <div className="navBar-items">
+        
+                        <p className="navbar-brand mt-2 ms-3">Welcome</p>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <p className="navbar-brand mt-2">Welcome</p>
-                    </div>
+     
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <div className="accordion mt-2" id="accordionExample">
                             <div className="accordion-item">

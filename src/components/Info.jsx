@@ -6,6 +6,7 @@ export default function Info() {
     const [animateBtn, setAnimateBtn] = useState("")
 
     const changeStatus = () => {
+
         setReadMore(!readMore);
 
         if(readMore === true){
