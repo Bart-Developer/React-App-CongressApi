@@ -1,12 +1,13 @@
 import React from 'react'
 
-export const HouseCg13 = () => {
+const HouseCg13 = () => {
     
     
     return (
         
-        <div>
-            
+        <div className='text-white'>
+            <h1>im House in  113</h1>
         </div>
     )
 }
+export default HouseCg13

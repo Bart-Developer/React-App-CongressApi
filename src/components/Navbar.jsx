@@ -1,24 +1,28 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Navbar = () => {
+const Navbar = ( { data } ) => {
+
+    const toggleComponents = (x) => {
+      data(x);
+    }
 
     return (
 
         <>
             <nav className="navbar navbar-dark">
                 <div className="container-fluid">
-                    <div className="navBar-items">
+                   
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <p className="navbar-brand mt-2">Welcome</p>
-                    </div>
+                        <p className="navbar-brand mt-2">Congress</p>
+           
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <div className="accordion mt-2" id="accordionExample">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingOne">
-                                    <button className="accordion-button static" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button onClick={()=> {toggleComponents('info')}} className="accordion-button static" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Home
                                     </button>
                                 </h2>
