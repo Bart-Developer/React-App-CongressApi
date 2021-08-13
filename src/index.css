@@ -42,6 +42,8 @@
   padding-bottom: 0px!important;
 }
   
+
+
 /*------------HEADER-----------*/
  
 
@@ -50,6 +52,7 @@
   width: 100%;
   background-color: var(--mainColor);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--mainLetterColor);
