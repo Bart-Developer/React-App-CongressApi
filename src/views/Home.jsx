@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { renderComponent } from '../services/renderer'
 import Info from '../components/Info';
 import HouseCg13 from '../components/HouseCg13';
+import SenateCg13 from '../components/SenateCg13';
 
 
 const Home = () => {
@@ -16,6 +17,8 @@ const Home = () => {
             return <Info />
         } else if (component === 'HouseCg13') {
             return <HouseCg13 />
+        } else if(component === 'SenateCg13'){
+            return <SenateCg13 />
         }
     }, [component])
 

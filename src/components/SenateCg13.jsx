@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const SenateCg13 = () => {
-   
-   
-   
+const SenateCg13 = () => {
+
     return (
-        <div>
-            <h1>im senate 113</h1>
+        <div className='text-white'>
+            <h1>im senate in  113</h1>
         </div>
     )
 }
+
+export default SenateCg13
