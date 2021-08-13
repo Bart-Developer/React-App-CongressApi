@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from '../assets/senate_logo.png'
 
 export default function Header() {
     
@@ -8,8 +8,7 @@ export default function Header() {
         <>
             <header>
                 <div className="ContentHeader">
-                    <h1>EEUU Status</h1>
-
+                    <img src= {logo} alt="logo" /> 
                 </div>
             </header>
         </>
