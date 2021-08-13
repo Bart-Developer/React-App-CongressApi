@@ -8,16 +8,16 @@ import HouseCg13 from '../components/HouseCg13';
 
 const Home = () => {
 
-    const [componente, setComponente] = useState('perrito')
+    const [component, setComponent] = useState('info')
 
     useEffect(() => {
 
-        if (componente === 'info') {
+        if (component === 'info') {
             return <Info />
-        } else if (componente === 'HouseCg13') {
+        } else if (component === 'HouseCg13') {
             return <HouseCg13 />
         }
-    }, [componente])
+    }, [component])
 
 
 
@@ -26,12 +26,12 @@ const Home = () => {
         <>
             <Header />
 
-            <Navbar data={ setComponente } />
+            <Navbar data={ setComponent } />
 
             <main>
                 <div className="contentMain">
                     <div className="div-content-info">
-                        {renderComponent(componente)}
+                        {renderComponent(component)}
                     </div>
                 </div>
             </main>

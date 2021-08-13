@@ -16,7 +16,7 @@ const Navbar = ( { data } ) => {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <p className="navbar-brand mt-2">Congress</p>
+                        <p className="navbar-brand mt-2">Congress Status</p>
            
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <div className="accordion mt-2" id="accordionExample">
@@ -34,11 +34,11 @@ const Navbar = ( { data } ) => {
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone1" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('HouseCg13')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone1" aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('SenateCg13')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>
