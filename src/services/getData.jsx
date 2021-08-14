@@ -1,5 +1,5 @@
 
-export const getData= async () => {
+export const getData = async () => {
     
     // const url = 'https://api.propublica.org/congress/v1/113/house/members.json' <- add
 

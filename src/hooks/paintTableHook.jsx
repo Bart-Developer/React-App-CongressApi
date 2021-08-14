@@ -10,7 +10,6 @@ export const paintTableHook = ( /* acá senators o houses */) => {
 
     //avoid the warnings in console
     console.log(state, setState);
-    console.log(getData);
 
     useEffect(() => {
 
