@@ -1,18 +1,27 @@
 import React from 'react'
-import { getData } from '../services/getData'
 import Table from '../components/Table'
+import { useFetchFilter } from '../hooks/useFetchFilter';
 
 const HouseCg13 = ({ typeFetch }) => {
 
-    console.log(typeFetch)
-    getData(typeFetch);
-
+    const { data:congress }  = useFetchFilter(typeFetch);
 
     return (
 
         <div className='text-white'>
-            <Table api = { typeFetch } />
+
+            {
+                congress.map(congressman =>
+
+                    <Table
+                        key={congressman.id}
+                        {...congressman}
+                    />
+                )
+            }
+
         </div>
     )
 }
+
 export default HouseCg13

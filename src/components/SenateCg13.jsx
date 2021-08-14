@@ -1,14 +1,25 @@
 import React from 'react'
-import { getData } from '../services/getData';
+import { useFetchFilter } from '../hooks/useFetchFilter';
+import Table from './Table';
 
 const SenateCg13 = ({ typeFetch }) => {
-    
-    console.log(typeFetch)
-    getData(typeFetch);
+   
+    const { data:congress }  = useFetchFilter(typeFetch);
 
     return (
+        
         <div className='text-white'>
-            <h1>im senate in  113!</h1>
+
+            {
+                congress.map(congressman =>
+
+                    <Table
+                        key={congressman.id}
+                        {...congressman}
+                    />
+                )
+            }
+
         </div>
     )
 }
