@@ -6,7 +6,7 @@ import { renderComponent } from '../services/renderer'
 
 const Home = () => {
 
-    const [component, setComponent] = useState('info')
+    const [component, setComponent] = useState({comp: 'info', table:''})
 
     return (
 
