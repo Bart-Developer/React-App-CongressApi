@@ -1,6 +1,10 @@
 import React from 'react'
+import { getData } from '../services/getData';
 
-const SenateCg13 = () => {
+const SenateCg13 = ({ typeFetch }) => {
+    
+    console.log(typeFetch)
+    getData(typeFetch);
 
     return (
         <div className='text-white'>
