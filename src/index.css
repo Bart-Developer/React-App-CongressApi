@@ -143,3 +143,15 @@ thead{
 thead th{
   font-size: .8rem;
 }
+
+.btn-group{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.label-table{
+  font-size: .7rem!important;
+}
