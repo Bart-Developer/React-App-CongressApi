@@ -2,6 +2,8 @@ import React from 'react'
 
 const Table = ({ congress }) => {
 
+
+    console.log(congress)
     return (
 
         /*ACÁ PINTAS LA TABLA ↓ */

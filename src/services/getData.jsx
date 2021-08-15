@@ -19,6 +19,7 @@ export const getData = async (table) => {
     
     let congress = members.map(congressman => {
         return {
+            
             id: congressman.id,
             title: congressman.title,
             name: congressman.first_name,

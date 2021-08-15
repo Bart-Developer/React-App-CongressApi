@@ -1,8 +1,8 @@
 import React from 'react'
-import Table from '../components/Table'
+import Table from './Table'
 import { useFetchFilter } from '../hooks/useFetchFilter';
 
-const HouseCg13 = ({ typeFetch }) => {
+const HouseCg13 = ( { typeFetch } ) => {
 
     const { data:congress }  = useFetchFilter(typeFetch);
 
@@ -10,7 +10,7 @@ const HouseCg13 = ({ typeFetch }) => {
 
         <div className='text-white'>
     
-                <Table congress={ congress } />
+            <Table congress={ congress } />
 
         </div>
     )
