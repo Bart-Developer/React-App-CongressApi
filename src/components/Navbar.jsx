@@ -44,7 +44,11 @@ const Navbar = ( { data } ) => {
                                         House
                                     </button>
 
+<<<<<<< HEAD
                                     <button onClick={()=> {toggleComponents('SenateCg13','senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+=======
+                                    <button onClick={()=> {toggleComponents('SenateCg13', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+>>>>>>> a9045d6655debfe3fed0fab34ea756f34f5468e0
                                         Senate
                                     </button>
                                 </div>
@@ -56,11 +60,11 @@ const Navbar = ( { data } ) => {
                                     </button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <button onClick={()=> {toggleComponents('HouseAtd')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone3" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('HouseAtd' , 'house')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone3" aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button onClick={()=> {toggleComponents('SenateAtd')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('SenateAtd', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>

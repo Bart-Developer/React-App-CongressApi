@@ -11,16 +11,16 @@ export const renderComponent = ({ comp , table }) => {
             return <Info />;
 
         case 'HouseCg13':
-            return <HouseCg13 house={table} />;
+            return <HouseCg13 typeFetch={table} />;
 
         case 'SenateCg13':
-            return <SenateCg13 />;
+            return <SenateCg13 typeFetch={table} />;
         
         case 'SenateAtd':
-            return <SenateAtd />;
+            return <SenateAtd typeFetch={table}/>;
 
         case 'HouseAtd':
-            return <HouseAtd />;
+            return <HouseAtd typeFetch={table} />;
 
         default: return <Info />;
     }

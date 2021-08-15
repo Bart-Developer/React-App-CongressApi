@@ -1,26 +1,9 @@
 
 export const getData = async (table) => {
 
-    let url='';
+    //FETCH FROM DATA NEEDED
 
-   if (table === 'house'){
-       console.log('wacho entre al fin');
-       url = 'https://api.propublica.org/congress/v1/113/house/members.json'
-   }
-
- 
-
-    // switch (table) {
-    //     case 'senate':
-    //         url = 'https://api.propublica.org/congress/v1/113/senate/members.json';
-    //         break;
-    //     case 'house':
-    //         url = 'https://api.propublica.org/congress/v1/113/house/members.json';
-    //         break;
-
-    //     default: url = '';
-    // }
-
+    const url = `https://api.propublica.org/congress/v1/113/${table}/members.json`
     const key = {
         method: 'GET',
         headers: {
@@ -28,9 +11,28 @@ export const getData = async (table) => {
         }
     }
     const resp = await fetch(url, key)
-    const { results: [data] } = await resp.json();
+    const { results: [ data ] } = await resp.json();
+    const { members } = data;
+    
 
-    console.log(data)
+//    FILTER DATA NEEDED
+    
+    let congress = members.map(congressman => {
+        return {
+            id: congressman.id,
+            title: congressman.title,
+            name: congressman.first_name,
+            last_name: congressman.last_name,
+            party: congressman.party,
+            missed_votes_pct: congressman.missed_votes_pct,
+            votes_with_party_pct: congressman.votes_with_party_pct,
+            state: congressman.state,
+            total_votes: congressman.total_votes,
+            missed_votes: congressman.missed_votes,
+            years_in_office: congressman.seniority
+        }
+    })
 
-    return data;
+  
+    return congress;
 }

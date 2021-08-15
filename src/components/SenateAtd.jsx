@@ -1,9 +1,12 @@
 import React from 'react'
+import { getData } from '../services/getData';
 
 
 
-const SenateAtd = () => {
+const SenateAtd = ({ typeFetch }) => {
     
+    console.log(typeFetch)
+    getData(typeFetch);
     
     return (
         <div className='text-white'>
