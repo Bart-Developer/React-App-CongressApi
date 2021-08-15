@@ -9,14 +9,14 @@ const Table = ({ congress }) => {
         /*ACÁ PINTAS LA TABLA ↓ */
 
         <div className="mainTable">
-            <table className="table table-dark table-hover">
+            <table className="table table-dark table-hover ">
                 <thead>
                     <tr className="text-danger">
                         <th scope="col">Name</th>
                         <th scope="col">Party</th>
                         <th scope="col">State</th>
                         <th scope="col">Seniority</th>
-                        <th scope="col">% Votes w/Party</th>
+                        <th scope="col width">% Votes w/Party</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -133,7 +133,12 @@ table tr{
   height: 60vh;
   overflow: scroll;
 }
-/* 
+
 thead{
   position: sticky;
-} */
+  top: 0;
+}
+
+thead th{
+  font-size: .8rem;
+}
