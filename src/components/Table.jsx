@@ -6,10 +6,10 @@ const Table = ({ congress }) => {
 
         /*ACÁ PINTAS LA TABLA ↓ */
 
-        <div>
-            <table className="table table-dark table-responsive ">
+        <div className="mainTable">
+            <table className="table table-dark table-hover">
                 <thead>
-                    <tr>
+                    <tr className="text-danger">
                         <th scope="col">Name</th>
                         <th scope="col">Party</th>
                         <th scope="col">State</th>
