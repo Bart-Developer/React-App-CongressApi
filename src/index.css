@@ -124,6 +124,7 @@ main{
 table{
   table-layout: fixed;
   border-collapse: collapse;
+  text-align: center;
 }
 table tr{
   font-size: .7rem;
