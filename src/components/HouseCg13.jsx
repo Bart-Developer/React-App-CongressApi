@@ -9,16 +9,8 @@ const HouseCg13 = ({ typeFetch }) => {
     return (
 
         <div className='text-white'>
-
-            {
-                congress.map(congressman =>
-
-                    <Table
-                        key={congressman.id}
-                        {...congressman}
-                    />
-                )
-            }
+    
+                <Table congress={ congress } />
 
         </div>
     )
