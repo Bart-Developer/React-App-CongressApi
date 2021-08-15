@@ -1,12 +1,17 @@
 import React from 'react'
+import { getData } from '../services/getData'
+import Table from '../components/Table'
 
-const HouseCg13 = () => {
-    
-    
+const HouseCg13 = ({ house:typeFetch }) => {
+
+    console.log(typeFetch)
+    getData(typeFetch);
+
+
     return (
-        
+
         <div className='text-white'>
-            <h1>im House in  113</h1>
+            <Table api = { typeFetch } />
         </div>
     )
 }
