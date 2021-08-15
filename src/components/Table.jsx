@@ -3,21 +3,24 @@ import React from 'react'
 const Table = ({ congress }) => {
 
 
-    console.log(congress)
+    const handleFilterChange = (party) => {
+        console.log(party)
+    } 
+
     return (
 
         /*ACÁ PINTAS LA TABLA ↓ */
 
         <div className="mainTable">
-            <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio1" />
-                <label className="btn btn-outline-light label-table" htmlFor="btnradio1">Republicans</label>
+            <div onChange={ (e) => handleFilterChange(e.target.id)} className="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" className="btn-check" name="btnradio" id="R" />
+                <label className="btn btn-outline-light label-table" htmlFor="R">Republicans</label>
 
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio2" />
-                <label className="btn btn-outline-light label-table" htmlFor="btnradio2">Democrats</label>
+                <input type="radio" className="btn-check" name="btnradio" id="D" />
+                <label className="btn btn-outline-light label-table" htmlFor="D">Democrats</label>
 
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio3" />
-                <label className="btn btn-outline-light label-table" htmlFor="btnradio3">Independents</label>
+                <input type="radio" className="btn-check" name="btnradio" id="I" />
+                <label className="btn btn-outline-light label-table" htmlFor="I">Independents</label>
 
             </div>
             <table className="table table-dark table-hover ">
