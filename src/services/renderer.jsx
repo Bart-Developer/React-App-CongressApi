@@ -1,8 +1,6 @@
-import HouseAtd from "../components/HouseAtd";
-import HouseCg13 from "../components/HouseCg13";
+import Congress113 from "../components/Congress113";
 import Info from "../components/Info";
-import SenateAtd from "../components/SenateAtd";
-import SenateCg13 from "../components/SenateCg13";
+import Attendance from "../components/Attendance";
 
 export const renderComponent = ({ comp , table }) => {
 
@@ -10,17 +8,11 @@ export const renderComponent = ({ comp , table }) => {
         case 'info':
             return <Info />;
 
-        case 'HouseCg13':
-            return <HouseCg13 typeFetch={table} />;
-
-        case 'SenateCg13':
-            return <SenateCg13 typeFetch={table} />;
-        
+        case 'Congress113':
+            return <Congress113 typeFetch={ table } />;
+ 
         case 'SenateAtd':
-            return <SenateAtd typeFetch={table}/>;
-
-        case 'HouseAtd':
-            return <HouseAtd typeFetch={table} />;
+            return <Attendance typeFetch={ table }/>;
 
         default: return <Info />;
     }
