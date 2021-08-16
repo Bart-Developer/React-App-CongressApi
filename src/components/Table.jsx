@@ -21,7 +21,7 @@ const Table = ( { congress } ) => {
 
         /*ACÁ PINTAS LA TABLA ↓ */
 
-        <div className="mainTable">
+        <div className="mainTable animate__animated animate__fadeIn">
             <div onChange={(e) => handleFilterChange(e.target.id)} className="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" className="btn-check" name="btnradio" id="R" />
                 <label className="btn btn-outline-light label-table" htmlFor="R">Republicans</label>
@@ -50,11 +50,11 @@ const Table = ( { congress } ) => {
                         filterCongress.map(congressman =>
 
                             <tr key={congressman.id}>
-                                <td>{congressman.name} {congressman.last_name} </td>
-                                <td>{congressman.party}</td>
-                                <td>{congressman.state}</td>
-                                <td>{congressman.years_in_office}</td>
-                                <td>{congressman.votes_with_party_pct}</td>
+                                <td className='animate__animated animate__fadeIn'>{congressman.name} {congressman.last_name} </td>
+                                <td className='animate__animated animate__fadeIn'>{congressman.party}</td>
+                                <td className='animate__animated animate__fadeIn'>{congressman.state}</td>
+                                <td className='animate__animated animate__fadeIn'>{congressman.years_in_office}</td>
+                                <td className='animate__animated animate__fadeIn'>{congressman.votes_with_party_pct}</td>
                             </tr>
                         )
                     }
