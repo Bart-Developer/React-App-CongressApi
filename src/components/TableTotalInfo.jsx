@@ -1,70 +1,92 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 const TableTotalInfo = ({ congress }) => {
 
+    //Hooks
     const [data, setData] = useState(congress)
-    const [democrat, setDemocrat] = useState([])
-    const [democratPercent, setDemocratPercent] = useState(0)
-    const [republican, setRepublican] = useState([])
-    // const [republicanPercent, setRepublicanPercent] = useState([])
-    const [independet, setIndependet] = useState([])
-    // const [independetPercent, setIndependetPercent] = useState([])
+
+    const [congressmanType, setCongressmanType] = useState({
+        democrat: {
+            member: [1, 2, 3],
+            votesWParty: 20,
+        },
+        republican: {
+            member: [1, 2, 3],
+            votesWParty: 20,
+        },
+        independent: {
+            member: [1, 2, 3],
+            votesWParty: 20,
+        }
+    })
+
+    //Functions
+
+    function sumAll(arrayFilter) {
+
+        let amount = 0;
+        arrayFilter.forEach(members => {
+            amount += members.votes_with_party_pct ;
+        })
+
+        return amount / arrayFilter.length
+    }
+
 
     useEffect(() => {
-        setData(congress)
-        setDemocrat(data.filter(x => x.party === 'D')) //guardo los diferentes arrays para trabajar en ellos
-        setRepublican(data.filter(x => x.party === 'R'))
-        setIndependet(data.filter(x => x.party === 'ID'))
 
-
-        handleVotedParty()
-    }, [ congress, data ])
-
-
-        var acumPercentD = 0; //defino variable para ir acumulando y setear al estado
-        // var acumPercentR = 0;
-        const handleVotedParty =  () =>{
-            democrat.forEach(member =>{ //recorro 
-                acumPercentD +=  parseFloat(member.votes_with_party_pct.slice(1,7)); //acumulo por cada miembro 
-                console.log(acumPercentD)
-            })
-            setDemocratPercent((acumPercentD / democrat.length)) //seteo el porcentaje final
-    
+        const asyncFunction = () => {
+            setData(congress)
         }
 
-    // console.log(democratPercent)
-    
+        asyncFunction();
+
+        setCongressmanType(
+            {
+                democrat: data.filter(x => x.party === 'D'),
+                demoVotesWParty: sumAll(data.filter(x => x.party === 'D')).toFixed(2),
+
+                republican: data.filter(x => x.party === 'R'),
+                repVotesWParty: sumAll(data.filter(x => x.party === 'R')).toFixed(2),
+
+                independent: data.filter(x => x.party === 'ID'),
+                indVotesWParty: sumAll(data.filter(x => x.party === 'ID')).toFixed(2),
+            }
+        )
+
+    }, [congress, data])
+
 
     return (
         <div>
             <div className="mainTable animate__animated animate__fadeIn">
-            <table className="table table-dark table-hover ">
-                <thead>
-                    <tr className="text-danger">
-                        <th scope="col">Party</th>
-                        <th scope="col">N° of reps</th>
-                        <th scope="col">% voted w/ Party</th>
-                    </tr>
-                </thead>
+                <table className="table table-dark table-hover ">
+                    <thead>
+                        <tr className="text-danger">
+                            <th scope="col">Party</th>
+                            <th scope="col">N° of reps</th>
+                            <th scope="col">% voted w/ Party</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>Democrat</td>
-                        <td>{democrat.length}</td>
-                        <td>%{democratPercent.toFixed(2)}</td>
-                    </tr>
-                    <tr>
-                        <td>Republican</td>
-                        <td>{republican.length}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Independent</td>
-                        <td>{independet.length}</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                    <tbody>
+                        <tr>
+                            <td>Democrat</td>
+                            <td>{ congressmanType.democrat.length }</td>
+                            <td>% { isNaN(congressmanType.demoVotesWParty) ? 'Loading...' : congressmanType.demoVotesWParty } </td>
+                        </tr>
+                        <tr>
+                            <td>Republican</td>
+                            <td>{ congressmanType.republican.length }</td>
+                            <td>% { isNaN(congressmanType.repVotesWParty) ? 'Loading...' : congressmanType.repVotesWParty }</td>
+                        </tr>
+                        <tr>
+                            <td>Independent</td>
+                            <td>{ congressmanType.independent.length }</td>
+                            <td>% { isNaN(congressmanType.indVotesWParty) ?  'Loading...' : congressmanType.indVotesWParty }</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     )
