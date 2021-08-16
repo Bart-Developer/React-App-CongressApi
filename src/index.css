@@ -55,7 +55,6 @@
   width: 100%;
   background-color: var(--mainColor);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--mainLetterColor);
@@ -65,15 +64,6 @@
 .ContentHeader h1{
   color:var(--mainLetterColor);
   letter-spacing: 3px;
-}
-
-#imgHeader{
-  background-image: url(../src/assets/Tía\ Alejandra.gif);
-  height: 9vh;
-  width: 6vw;
-  background-position: center;
-  background-size: cover;
-  border-radius: 60%;
 }
 
 /* ------------MAIN---------------- */
@@ -138,7 +128,9 @@ table tr{
 thead{
   position: sticky;
   top: 0;
+  z-index: 999999;
 }
+
 
 thead th{
   font-size: .8rem;
@@ -154,4 +146,11 @@ thead th{
 
 .label-table{
   font-size: .7rem!important;
+}
+
+.table>:not(caption)>*>* {
+  padding: 2.2rem .5rem!important;
+}
+table tr {
+  font-size: .8rem;
 }

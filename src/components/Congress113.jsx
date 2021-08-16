@@ -1,19 +1,26 @@
 import React from 'react'
 import Table from './Table'
+
+
 import { useFetchFilter } from '../hooks/useFetchFilter';
 
-const HouseCg13 = ( { typeFetch } ) => {
+const Congress113 = ( { typeFetch } ) => {
 
     const { data:congress }  = useFetchFilter(typeFetch);
 
     return (
-
-        <div className='text-white'>
-    
-            <Table congress={ congress } />
-
+        <>
+   
+        <div className="contentMain">
+            <div className="div-content-info">
+                <Table congress={ congress } />
+            </div>
         </div>
+   
+  
+
+        </>
     )
 }
 
-export default HouseCg13
+export default Congress113

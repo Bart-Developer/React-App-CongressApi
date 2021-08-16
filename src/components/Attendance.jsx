@@ -1,19 +1,21 @@
 import React from 'react'
 import { getData } from '../services/getData';
+import TableTotalInfo from './TableTotalInfo';
+import { useFetchFilter } from '../hooks/useFetchFilter';
 
-
-
-const SenateAtd = ({ typeFetch }) => {
+const Attendance = ({ typeFetch }) => {
     
-    console.log(typeFetch)
+    const { data:congress }  = useFetchFilter(typeFetch);
     getData(typeFetch);
     
     return (
-        <div className='text-white'>
-            <h1>im senate Attendance</h1>
+        <div className="contentMain">
+            <div className="div-content-info">
+                <TableTotalInfo congress={ congress } />
+            </div>
         </div>
     )
 }
 
-export default SenateAtd
+export default Attendance
 

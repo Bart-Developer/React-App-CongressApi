@@ -16,11 +16,9 @@ const Home = () => {
             <Navbar data={ setComponent } />
 
             <main>
-                <div className="contentMain">
-                    <div className="div-content-info">
+
                         {renderComponent(component)}
-                    </div>
-                </div>
+
             </main>
 
         </>
