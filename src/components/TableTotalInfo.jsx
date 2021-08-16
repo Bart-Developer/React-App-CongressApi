@@ -16,22 +16,23 @@ const TableTotalInfo = ({ congress }) => {
         setRepublican(data.filter(x => x.party === 'R'))
         setIndependet(data.filter(x => x.party === 'ID'))
 
-            handleVotedParty();
-    }, [congress, data])
+
+        handleVotedParty()
+    }, [ congress, data ])
 
 
-    var acumPercentD = 0; //defino variable para ir acumulando y setear al estado
-    var acumPercentR = 0;
-    const handleVotedParty = () =>{
+        var acumPercentD = 0; //defino variable para ir acumulando y setear al estado
+        // var acumPercentR = 0;
+        const handleVotedParty =  () =>{
+            democrat.forEach(member =>{ //recorro 
+                acumPercentD +=  parseFloat(member.votes_with_party_pct.slice(1,7)); //acumulo por cada miembro 
+                console.log(acumPercentD)
+            })
+            setDemocratPercent((acumPercentD / democrat.length)) //seteo el porcentaje final
+    
+        }
 
-        democrat.map(member =>{ //recorro 
-            acumPercentD =  acumPercentD+  parseFloat(member.votes_with_party_pct.slice(1,7)); //acumulo por cada miembro 
-        })
-        setDemocratPercent((acumPercentD / democrat.length)) //seteo el porcentaje final
-
-    }
-
-    console.log(democratPercent)
+    // console.log(democratPercent)
     
 
     return (
@@ -50,7 +51,7 @@ const TableTotalInfo = ({ congress }) => {
                     <tr>
                         <td>Democrat</td>
                         <td>{democrat.length}</td>
-                        <td>{democratPercent.toString() }</td>
+                        <td>%{democratPercent.toFixed(2)}</td>
                     </tr>
                     <tr>
                         <td>Republican</td>
