@@ -1,18 +1,14 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 const Table = ({ congress }) => {
 
-
-    const handleFilterChange = (party) => {
-        console.log(party)
-    } 
 
     return (
 
         /*ACÁ PINTAS LA TABLA ↓ */
 
         <div className="mainTable">
-            <div onChange={ (e) => handleFilterChange(e.target.id)} className="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <div onChange={ (e) => handleApi(e.target.id)} className="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" className="btn-check" name="btnradio" id="R" />
                 <label className="btn btn-outline-light label-table" htmlFor="R">Republicans</label>
 
@@ -37,7 +33,7 @@ const Table = ({ congress }) => {
 
                     {
 
-                        congress.map(congressman =>
+                        filterCongress.map(congressman =>
 
                             <tr key={congressman.id}>
                                 <td>{congressman.name} {congressman.last_name} </td>
