@@ -7,16 +7,16 @@ const TableTotalInfo = ({ congress }) => {
 
     const [congressmanType, setCongressmanType] = useState({
         democrat: {
-            member: [1, 2, 3],
-            votesWParty: 20,
+            member: [],
+            votesWParty: 0,
         },
         republican: {
-            member: [1, 2, 3],
-            votesWParty: 20,
+            member: [],
+            votesWParty: 0,
         },
         independent: {
-            member: [1, 2, 3],
-            votesWParty: 20,
+            member: [],
+            votesWParty: 0,
         }
     })
 
