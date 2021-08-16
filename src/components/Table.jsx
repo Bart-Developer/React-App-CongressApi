@@ -29,8 +29,8 @@ const Table = ( { congress } ) => {
                 <input type="radio" className="btn-check" name="btnradio" id="D" />
                 <label className="btn btn-outline-light label-table" htmlFor="D">Democrats</label>
 
-                <input type="radio" className="btn-check" name="btnradio" id="I" />
-                <label className="btn btn-outline-light label-table" htmlFor="I">Independents</label>
+                <input type="radio" className="btn-check" name="btnradio" id="ID" />
+                <label className="btn btn-outline-light label-table" htmlFor="ID">Independents</label>
 
             </div>
             <table className="table table-dark table-hover ">
