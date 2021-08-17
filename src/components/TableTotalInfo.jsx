@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 const TableTotalInfo = ({ congress }) => {
 
-    //Hooks
+    //State
     const [data, setData] = useState(congress)
 
     const [congressmanType, setCongressmanType] = useState({
@@ -59,6 +59,10 @@ const TableTotalInfo = ({ congress }) => {
 
     return (
         <div>
+            <div className="tittleInfo">
+                <h3 className="fw-bold">Info Partys</h3>
+            </div>
+
             <div className="mainTable animate__animated animate__fadeIn">
                 <table className="table table-dark table-hover ">
                     <thead>

@@ -9,11 +9,18 @@ const Attendance = ({ typeFetch }) => {
     getData(typeFetch);
     
     return (
+        <>
         <div className="contentMain">
             <div className="div-content-info">
                 <TableTotalInfo congress={ congress } />
             </div>
         </div>
+        <div className="contentMain">
+            <div className="div-content-info">
+                
+            </div>
+        </div>
+        </>
     )
 }
 
