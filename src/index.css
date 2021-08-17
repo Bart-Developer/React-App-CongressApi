@@ -111,6 +111,19 @@ main{
 /* ---------------------------- */
 
 /* --------TABLE----------------- */
+
+.tittleInfo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color:var(--mainBackground);
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 5px;
+  color: var(--mainLetterColor);
+}
+
 table{
   table-layout: fixed;
   border-collapse: collapse;
