@@ -2,6 +2,7 @@ import React from 'react'
 import { getData } from '../services/getData';
 import TableTotalInfo from './TableTotalInfo';
 import { useFetchFilter } from '../hooks/useFetchFilter';
+import TableOrderAttribute from './TableOrderAttribute';
 
 const Attendance = ({ typeFetch }) => {
     
@@ -17,7 +18,7 @@ const Attendance = ({ typeFetch }) => {
         </div>
         <div className="contentMain">
             <div className="div-content-info">
-                
+                <TableOrderAttribute congress={ congress } />
             </div>
         </div>
         </>
