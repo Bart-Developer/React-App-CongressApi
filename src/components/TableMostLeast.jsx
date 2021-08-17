@@ -15,8 +15,8 @@ const TableMostLeast = ({ props, tittle }) => {
                     <thead>
                         <tr className="text-danger">
                             <th scope="col">Name</th>
-                            <th scope="col">No. Missed Votes</th>
-                            <th scope="col">% Missed</th>
+                            <th scope="col"> { tittle === 'Least Loyal' || tittle === 'Most Loyal' ? 'Number Party Votes' : 'No. Missed Votes' } </th>
+                            <th scope="col"> { tittle === 'Least Loyal' || tittle === 'Most Loyal' ? '% Party Votes' : '% Missed' } </th>
                         </tr>
                     </thead>
 
@@ -26,9 +26,9 @@ const TableMostLeast = ({ props, tittle }) => {
                             props.map(congressman =>
 
                                 <tr key={congressman.id}>
-                                    <td className='animate__animated animate__fadeIn'> {congressman.name}  {congressman.last_name} </td>
-                                    <td className='animate__animated animate__fadeIn'> {congressman.missed_votes}</td>
-                                    <td className='animate__animated animate__fadeIn'>% {congressman.missed_votes_pct}</td>
+                                    <td className='animate__animated animate__fadeIn'> { congressman.name }  { congressman.last_name } </td>
+                                    <td className='animate__animated animate__fadeIn'> { congressman.missed_votes }</td>
+                                    <td className='animate__animated animate__fadeIn'>% { congressman.missed_votes_pct }</td>
                                 </tr>
                             )
                         }
