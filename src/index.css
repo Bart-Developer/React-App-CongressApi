@@ -13,8 +13,8 @@
 }
 
 .wrapper{
-  width: 375px;
-  margin:0 auto;
+  width: 100%;
+  /* margin:0 auto; */
 }
 
 /* 
@@ -196,4 +196,40 @@ thead th{
 }
 table tr {
   font-size: .8rem;
+}
+
+.div-tables{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 800px) {
+  .div-tables{
+    flex-wrap: nowrap;
+  }
+  
+}
+
+@media (min-width: 400px) {
+  .div-content-info{
+    width: 90%;
+  }
+
+  .mainTable{
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  table tr, td{
+    font-size: 1.2rem;
+  }
+
+  .content-text{
+    height: 30vh;
+    width: 80vw;
+  }
+
+  .label-table{
+    font-size: .8rem!important;
+  }
 }

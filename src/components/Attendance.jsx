@@ -48,18 +48,20 @@ const Attendance = ({ typeFetch }) => {
                     <TableTotalInfo congress={congress} />
                 </div>
             </div>
-            
-            <div className="contentMain">
-                <div className="div-content-info">
-                    <TableMostLeast tittle={'Least Engaged'} props={attendance.leastEngaged} />
+            <div className="div-tables">
+                <div className="contentMain">
+                    <div className="div-content-info">
+                        <TableMostLeast tittle={'Least Engaged'} props={attendance.leastEngaged} />
+                    </div>
+                </div>
+
+                <div className="contentMain">
+                    <div className="div-content-info">
+                        <TableMostLeast tittle={'Most Engaged'} props={attendance.MostEngaged} />
+                    </div>
                 </div>
             </div>
 
-            <div className="contentMain">
-                <div className="div-content-info">
-                    <TableMostLeast tittle={'Most Engaged'} props={attendance.MostEngaged} />
-                </div>
-            </div>
         </>
     )
 }
