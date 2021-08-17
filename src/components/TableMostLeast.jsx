@@ -1,6 +1,6 @@
 import React from 'react'
 
-const tableMostLeast = ({ props, tittle }) => {
+const TableMostLeast = ({ props, tittle }) => {
 
 
     return (
@@ -23,7 +23,6 @@ const tableMostLeast = ({ props, tittle }) => {
                     <tbody>
 
                         {
-
                             props.map(congressman =>
 
                                 <tr key={congressman.id}>
@@ -36,11 +35,10 @@ const tableMostLeast = ({ props, tittle }) => {
 
                     </tbody>
 
-
                 </table>
             </div>
         </div>
     )
 }
 
-export default tableMostLeast
+export default TableMostLeast

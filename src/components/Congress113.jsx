@@ -9,6 +9,7 @@ const Congress113 = ( { typeFetch } ) => {
     const { data:congress }  = useFetchFilter(typeFetch);
 
     return (
+        
         <>
    
         <div className="contentMain">
@@ -16,8 +17,6 @@ const Congress113 = ( { typeFetch } ) => {
                 <Table congress={ congress } />
             </div>
         </div>
-   
-  
 
         </>
     )
