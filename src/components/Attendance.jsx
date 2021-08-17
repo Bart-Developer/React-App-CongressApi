@@ -8,7 +8,7 @@ import {useInjectedText} from '../hooks/useInjectedText';
 import { cutTop10 } from '../services/cutTop10';
 import { orderArray } from '../services/orderArray';
 
-const Attendance = ({ typeFetch }) => {
+const Attendance = ( { typeFetch } ) => {
 
     const { data: congress } = useFetchFilter(typeFetch);
     getData(typeFetch);
