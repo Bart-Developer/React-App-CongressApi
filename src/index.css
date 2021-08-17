@@ -87,14 +87,16 @@ main{
 }
 .div-content-info{
   min-height: 70vh;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: var(--mainColor);
   border-radius: 10px;
   border: 1px solid white;
   padding: 10px;
+
 }
 
 .div-content-info p{
