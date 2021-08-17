@@ -7,7 +7,6 @@ import TableMostLeast from './TableMostLeast';
 import TableTotalInfo from './TableTotalInfo';
 
 
-
 const Loyalty = ({ typeFetch }) => {
     getData(typeFetch);
 
