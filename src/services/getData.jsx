@@ -15,7 +15,7 @@ export const getData = async (table) => {
     const { members } = data;
     
 
-//    FILTER DATA NEEDED
+    //    FILTER DATA NEEDED
     
     let congress = members.map(congressman => {
         return {
@@ -26,7 +26,6 @@ export const getData = async (table) => {
             last_name: congressman.last_name,
             party: congressman.party,
             missed_votes_pct: congressman.missed_votes_pct,
-            // votes_with_party_pct: `% ${congressman.votes_with_party_pct}`,
             votes_with_party_pct: congressman.votes_with_party_pct,
             state: congressman.state,
             total_votes: congressman.total_votes,

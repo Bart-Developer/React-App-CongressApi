@@ -2,7 +2,7 @@ import Congress113 from "../components/Congress113";
 import Info from "../components/Info";
 import Attendance from "../components/Attendance";
 
-export const renderComponent = ({ comp , table }) => {
+export const renderComponent = ( { comp , table } ) => {
 
     switch (comp) {
         case 'info':

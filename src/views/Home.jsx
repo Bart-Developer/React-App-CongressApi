@@ -6,18 +6,18 @@ import { renderComponent } from '../services/renderer'
 
 const Home = () => {
 
-    const [component, setComponent] = useState({comp: 'info', table:''})
+    const [component, setComponent] = useState({ comp: 'info', table: '' })
 
     return (
 
         <>
             <Header />
 
-            <Navbar data={ setComponent } />
+            <Navbar data={setComponent} />
 
             <main>
 
-                        {renderComponent(component)}
+                {renderComponent(component)}
 
             </main>
 

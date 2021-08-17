@@ -40,11 +40,11 @@ const Navbar = ( { data } ) => {
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <button onClick={()=> { toggleComponents('Congress113', 'house') } } className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone1" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> { toggleComponents('Congress113', 'house') } } className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button onClick={()=> {toggleComponents('Congress113', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('Congress113', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>
@@ -56,11 +56,11 @@ const Navbar = ( { data } ) => {
                                     </button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <button onClick={()=> {toggleComponents('Attendance' , 'house')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone3" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('Attendance' , 'house')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" aria-controls="collapseTwo">
                                         House
                                     </button>
 
-                                    <button onClick={()=> {toggleComponents('Attendance', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNone2" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button onClick={()=> {toggleComponents('Attendance', 'senate')}} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" aria-controls="collapseTwo">
                                         Senate
                                     </button>
                                 </div>
