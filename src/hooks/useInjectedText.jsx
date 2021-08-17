@@ -14,7 +14,7 @@ export const useInjectedText = (data) => {
                 break;
             default: setText("");
         }
-    }, [text])
+    }, [data])
 
     return text;
 }
