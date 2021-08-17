@@ -25,10 +25,10 @@ const TableMostLeast = ({ props, tittle }) => {
                         {
                             props.map(congressman =>
 
-                                <tr key={congressman.id}>
+                                <tr key={ congressman.id }>
                                     <td className='animate__animated animate__fadeIn'> { congressman.name }  { congressman.last_name } </td>
-                                    <td className='animate__animated animate__fadeIn'> { congressman.missed_votes }</td>
-                                    <td className='animate__animated animate__fadeIn'>% { congressman.missed_votes_pct }</td>
+                                    <td className='animate__animated animate__fadeIn'> { tittle === 'Least Loyal' || tittle === 'Most Loyal' ? (congressman.total_votes*congressman.votes_with_party_pct/100).toFixed(0) : congressman.missed_votes }</td>
+                                    <td className='animate__animated animate__fadeIn'>% { tittle === 'Least Loyal' || tittle === 'Most Loyal' ? congressman.votes_with_party_pct : congressman.missed_votes_pct }</td>
                                 </tr>
                             )
                         }
