@@ -1,13 +1,13 @@
 import React from 'react'
 
-const tableMostLeast = ({ props }) => {
+const tableMostLeast = ({ props, tittle }) => {
 
 
     return (
 
         <div>
             <div className="tittleInfo">
-                <h3 className="fw-bold">Info Partys</h3>
+                <h3 className="fw-bold">{tittle}</h3>
             </div>
 
             <div className="mainTable animate__animated animate__fadeIn">

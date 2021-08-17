@@ -11,7 +11,7 @@ export const renderComponent = ({ comp , table }) => {
         case 'Congress113':
             return <Congress113 typeFetch={ table } />;
  
-        case 'SenateAtd':
+        case 'Attendance':
             return <Attendance typeFetch={ table }/>;
 
         default: return <Info />;
