@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const TableTotalInfo = ({ congress }) => {
+const TableTotalInfo = ( { congress } ) => {
 
     //State
     const [data, setData] = useState(congress)
@@ -21,7 +21,6 @@ const TableTotalInfo = ({ congress }) => {
     })
 
     //Functions
-
     function sumAll(arrayFilter) {
 
         let amount = 0;
@@ -29,7 +28,7 @@ const TableTotalInfo = ({ congress }) => {
             amount += members.votes_with_party_pct ;
         })
 
-        return amount / arrayFilter.length
+        return amount / arrayFilter.length;
     }
 
 

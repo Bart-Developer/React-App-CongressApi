@@ -3,8 +3,12 @@ import { getData } from '../services/getData';
 import TableTotalInfo from './TableTotalInfo';
 import { InfoParty } from './InfoParty';
 import { useFetchFilter } from '../hooks/useFetchFilter';
+<<<<<<< HEAD
 import { useInjectedText } from '../hooks/useInjectedText';
 
+=======
+import TableOrderAttribute from './TableOrderAttribute';
+>>>>>>> 26f023b84be9e9550679f8d01aa15432314c8980
 
 const Attendance = ({ typeFetch }) => {
     
@@ -26,7 +30,7 @@ const Attendance = ({ typeFetch }) => {
         </div>
         <div className="contentMain">
             <div className="div-content-info">
-                
+                <TableOrderAttribute congress={ congress } />
             </div>
         </div>
         </>
