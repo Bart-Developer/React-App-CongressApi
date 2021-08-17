@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { getData } from '../services/getData';
 import TableTotalInfo from './TableTotalInfo';
 import { useFetchFilter } from '../hooks/useFetchFilter';
+<<<<<<< HEAD
 import TableMostLeast from './TableMostLeast';
 import { cutTop10 } from '../services/cutTop10';
 import { orderArray } from '../services/orderArray';
+=======
+>>>>>>> parent of 26f023b... agrego tablas
 
 const Attendance = ({ typeFetch }) => {
 
@@ -37,11 +40,18 @@ const Attendance = ({ typeFetch }) => {
                     <TableTotalInfo congress={ congress } />
                 </div>
             </div>
+<<<<<<< HEAD
 
             {/* <div className="contentMain">
                 <div className="div-content-info">
                     <TableMostLeast props={attendance.leastEngaged} />
                 </div>
+=======
+        </div>
+        <div className="contentMain">
+            <div className="div-content-info">
+                
+>>>>>>> parent of 26f023b... agrego tablas
             </div>
 
             <div className="contentMain">
