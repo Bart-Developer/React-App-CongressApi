@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useEffect,useState } from 'react'
 
 export const useInjectedText = (data) => {
@@ -16,6 +16,5 @@ export const useInjectedText = (data) => {
         }
     }, [text])
 
-    console.log(text)
     return text;
 }
